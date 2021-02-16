@@ -60,6 +60,7 @@ body {
 
 .btn-hero {
   color: var(--text-white);
+  background-color: var(--btn-blue);
   border: none;
   font-size: 16px;
   font-weight: 700;
@@ -90,6 +91,12 @@ body {
 
 .section .section-text {
   color: var(--text-gray);
+}
+/*Hero*/
+
+.hero,
+.footer {
+  background-color: var(--background);
 }
 
 /*Команда*/
@@ -132,4 +139,3 @@ body {
 .address .address-text {
   color: var(--text-white);
 }
-
