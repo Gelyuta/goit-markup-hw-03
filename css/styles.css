@@ -1,0 +1,135 @@
+/*Шрифты*/
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+}
+
+.logo .logo-blue {
+  color: var(--text-blue);
+}
+
+.logo .logo-white {
+  color: var(--text-white);
+}
+
+.logo .logo-black {
+  color: var(--text-black);
+}
+
+/*ссылки, кнопки/main*/
+
+.link,
+.link-current {
+  color: var(--text-dark-gray);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+
+.link:hover,
+.link:focus,
+.link-current {
+  color: var(--text-blue);
+}
+
+.buttons {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.buttons .btn-text {
+  color: var(--text-dark-gray);
+  border: none;
+  background: none;
+}
+
+.btn-text:hover {
+  color: var(--text-white);
+}
+
+.btn-hero {
+  color: var(--text-white);
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+/*Заголовки секций*/
+
+.hero .hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  color: var(--text-white);
+}
+
+.section .section-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  color: var(--text-black);
+}
+
+.section .section-subtitle {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--text-dark-gray);
+}
+
+.section .section-text {
+  color: var(--text-gray);
+}
+
+/*Команда*/
+
+.team {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--text-black);
+}
+
+.profession {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--text-gray);
+}
+
+/*Портфолио*/
+
+.projects .projects-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 36px;
+  color: var(--text-dark-gray);
+}
+
+.projects .projects-text {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--text-gray);
+}
+
+/*Подвал*/
+.address .address-link {
+  color: var(--text-white-op06);
+}
+
+.address .address-text {
+  color: var(--text-white);
+}
+
