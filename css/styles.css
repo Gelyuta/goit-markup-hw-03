@@ -1,9 +1,14 @@
 .container {
+  outline: 5px solid pink;
+}
+
+.container {
   width: 1170px;
   padding: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  outline: 2px solid tomato;
 }
 
 /*Шрифты*/
@@ -71,9 +76,15 @@ body {
   color: var(--text-white);
   background-color: var(--btn-blue);
   border: none;
+
   font-size: 16px;
   font-weight: 700;
   line-height: 30px;
+
+  display: inline-block;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
 }
 
 /*Заголовки секций*/
@@ -101,11 +112,12 @@ body {
 .section .section-text {
   color: var(--text-gray);
 }
-/*Hero*/
 
+/*Hero*/
 .hero,
 .footer {
   background-color: var(--background);
+  outline: 5px solid pink;
 }
 
 /*Команда*/
