@@ -17,4 +17,9 @@
   --btn-white: rgba(245, 244, 250, 1);
   --background: rgba(47, 48, 58, 1);
   --section-bcg: rgba(245, 244, 250, 1);
+
+  /*Портфолио|Сетка*/
+
+  --indent-card: 30px;
+  --border-card: rgba(238, 238, 238, 1);
 }

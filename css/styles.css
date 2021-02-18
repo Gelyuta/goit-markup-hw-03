@@ -1,11 +1,6 @@
-
 .container {
-  outline: 5px solid pink;
-}
-
-.container {
-  width: 1170px;
-  padding: 15px;
+  width: 1200px;
+  padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
@@ -45,6 +40,7 @@ body {
 
 .link,
 .link-current {
+  display: block;
   color: var(--text-dark-gray);
   font-weight: 500;
   font-size: 14px;
@@ -101,6 +97,17 @@ body {
   color: var(--text-white);
   margin-top: 0;
   margin-bottom: 30px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.section-about {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section-img {
+  padding-bottom: 94px;
 }
 
 .section .section-title {
@@ -109,9 +116,8 @@ body {
   line-height: 42px;
   color: var(--text-black);
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 50px;
 }
-
 
 .section .section-subtitle {
   font-weight: bold;
@@ -119,7 +125,7 @@ body {
   line-height: 16px;
   color: var(--text-dark-gray);
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
 
 .section .section-text {
@@ -132,13 +138,15 @@ body {
 .hero,
 .footer {
   background-color: var(--background);
-
-  outline: 5px solid pink;
 }
 
 /*Команда*/
 .section-bcg {
   background-color: var(--section-bcg);
+}
+
+.section-team {
+  padding-bottom: 94px;
 }
 
 .team {
@@ -147,8 +155,7 @@ body {
   line-height: 19px;
   color: var(--text-black);
   margin-top: 0;
-  margin-bottom: 0;
-}
+  margin-bottom: 10px;
 }
 
 .profession {
@@ -159,15 +166,40 @@ body {
   margin-top: 0;
   margin-bottom: 0;
 }
-}
 
 /*Портфолио*/
+.projects {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-left: calc(-1 * var(--indent-card));
+  margin-top: calc(-1 * var(--indent-card));
+}
+
+.projects > .card {
+  flex-basis: calc(100% / 3 - var(--indent-card));
+  margin-left: var(--indent-card);
+  margin-top: var(--indent-card);
+  border: 1px solid var(--border-card);
+}
+
+.card-thumb {
+  margin-bottom: 20px;
+}
+
+.card-text {
+  padding: 20px 24px;
+}
 
 .projects .projects-title {
   font-weight: bold;
   font-size: 18px;
   line-height: 36px;
   color: var(--text-dark-gray);
+  margin-top: 0;
+  margin-bottom: 4px;
 }
 
 .projects .projects-text {
@@ -178,6 +210,13 @@ body {
 }
 
 /*Подвал*/
+
+.footer-logo {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-bottom: 20px;
+}
+
 .address .address-link {
   color: var(--text-white-op06);
 }
