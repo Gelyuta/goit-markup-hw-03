@@ -8,6 +8,34 @@
   outline: 2px solid tomato;
 }
 
+/*Хедер*/
+
+.nav {
+  display: flex;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+}
+
+.main-nav {
+  display: flex;
+}
+
+.nav .nav-link + .nav-link {
+  margin-left: 50px;
+}
+
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+}
+
+.auth-nav .nav-link + .nav-link {
+  margin-left: 50px;
+}
+
 /*Шрифты*/
 body {
   font-family: "Roboto", sans-serif;
@@ -22,6 +50,7 @@ body {
   font-weight: bold;
   font-size: 26px;
   line-height: 31px;
+  margin-right: 93px;
 }
 
 .logo .logo-blue {
@@ -41,8 +70,12 @@ body {
 .link,
 .link-current {
   display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--text-dark-gray);
   font-weight: 500;
+
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
@@ -54,51 +87,33 @@ body {
   color: var(--text-blue);
 }
 
-.buttons {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 26px;
-}
-
-.buttons .btn-text {
-  color: var(--text-dark-gray);
-  border: none;
-  background: none;
-}
-
-.btn-text:hover {
-  color: var(--text-white);
-}
-
 .btn-hero {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+  min-height: 50px;
+
   color: var(--text-white);
   background-color: var(--btn-blue);
   border: none;
   font-size: 16px;
   font-weight: 700;
   line-height: 30px;
-
-  display: inline-block;
-  border-radius: 4px;
-  padding: 10px 32px;
-  min-width: 200px;
-  min-height: 50px;
 }
 
 /*Заголовки секций*/
-.hero {
-  text-align: center;
-}
 
 .hero .hero-title {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 60px;
   color: var(--text-white);
   margin-top: 0;
   margin-bottom: 30px;
   padding-top: 80px;
   padding-bottom: 80px;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
 }
 
 .section-about {
@@ -111,21 +126,23 @@ body {
 }
 
 .section .section-title {
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 42px;
   color: var(--text-black);
   margin-top: 0;
   margin-bottom: 50px;
+
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
 }
 
 .section .section-subtitle {
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
   color: var(--text-dark-gray);
   margin-top: 0;
   margin-bottom: 10px;
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
 }
 
 .section .section-text {
@@ -140,6 +157,10 @@ body {
   background-color: var(--background);
 }
 
+.hero {
+  text-align: center;
+}
+
 /*Команда*/
 .section-bcg {
   background-color: var(--section-bcg);
@@ -150,24 +171,59 @@ body {
 }
 
 .team {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
   color: var(--text-black);
   margin-top: 0;
   margin-bottom: 10px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
 }
 
 .profession {
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 19px;
   color: var(--text-gray);
   margin-top: 0;
   margin-bottom: 0;
+
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
 }
 
 /*Портфолио*/
+.buttons {
+  margin-bottom: 50px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.buttons .item {
+  color: var(--text-white);
+  background-color: var(--border-card);
+  border: none;
+  display: inline-block;
+  margin-left: 8px;
+  padding: 6px 22px;
+  border-radius: 4px;
+}
+
+.item:hover,
+.item:focus {
+  color: var(--text-blue);
+}
+
+.buttons .btn-text {
+  color: var(--text-dark-gray);
+  border: none;
+  background: none;
+}
+
+.btn-text:hover {
+  color: var(--text-white);
+}
+
 .projects {
   padding: 0;
   margin: 0;
@@ -194,12 +250,13 @@ body {
 }
 
 .projects .projects-title {
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 36px;
   color: var(--text-dark-gray);
   margin-top: 0;
   margin-bottom: 4px;
+
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 36px;
 }
 
 .projects .projects-text {
