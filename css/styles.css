@@ -1,3 +1,13 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -234,41 +244,63 @@ body {
 }
 
 /*Портфолио*/
-.buttons {
-  margin-bottom: 50px;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
 
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.buttons {
+  text-align: center;
+  padding-top: 94px;
+  margin-bottom: 50px;
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
-}
-
-.buttons .item {
-  color: var(--text-white);
-  background-color: var(--border-card);
-  border: none;
-  display: inline-block;
-  margin-left: 8px;
-  padding: 6px 22px;
-  border-radius: 4px;
-}
-
-.item:hover,
-.item:focus {
-  color: var(--text-blue);
 }
 
 .buttons .btn-text {
   color: var(--text-dark-gray);
   border: none;
   background: none;
+  padding: 0;
+  outline: none;
 }
 
-.btn-text:hover {
+.buttons .item {
+  text-decoration: none;
+  color: var(--text-white);
+  background-color: var(--border-card);
+  border: none;
+  display: inline-block;
+  padding: 6px 22px;
+  border-radius: 4px;
+}
+
+.buttons .item + .item {
+  margin-left: 8px;
+}
+
+.btn-text:hover,
+.btn-text:focus {
   color: var(--text-white);
 }
 
+.item:hover,
+.item:focus {
+  background-color: var(--btn-blue);
+}
+
 .projects {
-  padding: 0;
+  padding-bottom: 94px;
   margin: 0;
   display: flex;
   flex-wrap: wrap;
@@ -313,6 +345,7 @@ body {
 .footer {
   padding: 60px 0;
 }
+
 .footer-logo {
   padding-bottom: 20px;
 }
