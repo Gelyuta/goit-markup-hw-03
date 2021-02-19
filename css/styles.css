@@ -4,8 +4,6 @@
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-
-  outline: 2px solid tomato;
 }
 
 /*Хедер*/
@@ -30,6 +28,10 @@
 .auth-nav {
   display: flex;
   margin-left: auto;
+}
+
+.line {
+  border-bottom: 1px solid var(--border-line);
 }
 
 .auth-nav .nav-link + .nav-link {
@@ -107,22 +109,37 @@ body {
 .hero .hero-title {
   color: var(--text-white);
   margin-top: 0;
-  margin-bottom: 30px;
-  padding-top: 80px;
-  padding-bottom: 80px;
-
   font-weight: 900;
   font-size: 44px;
   line-height: 60px;
+  margin-bottom: var(--value-margin);
 }
 
 .section-about {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--value-margin));
+
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
+.section-about > .about {
+  flex-basis: calc(100% / 4 - var(--value-margin));
+  margin-left: var(--value-margin);
+}
+
 .section-img {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--value-margin));
+
   padding-bottom: 94px;
+}
+
+.section-img > .section-card {
+  flex-basis: calc(100% / 3 - var(--value-margin));
+  margin-left: 30px;
 }
 
 .section .section-title {
@@ -133,6 +150,11 @@ body {
   font-weight: bold;
   font-size: 36px;
   line-height: 42px;
+  text-align: center;
+}
+
+.img-thumb {
+  margin-bottom: 30px;
 }
 
 .section .section-subtitle {
@@ -151,23 +173,40 @@ body {
   margin-bottom: 0;
 }
 
-/*Hero*/
-.hero,
+/*Герой*/
+.hero-bcg,
 .footer {
   background-color: var(--background);
 }
 
 .hero {
+  max-width: 1600px;
   text-align: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 /*Команда*/
 .section-bcg {
   background-color: var(--section-bcg);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .section-team {
-  padding-bottom: 94px;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-left: calc(-1 * var(--indent-card));
+}
+
+.section-team > .section-cards {
+  flex-basis: calc(100% / 4 - var(--indent-card));
+  margin-left: var(--indent-card);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team {
@@ -183,11 +222,15 @@ body {
 .profession {
   color: var(--text-gray);
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 30px;
 
   font-weight: normal;
   font-size: 16px;
   line-height: 19px;
+}
+
+.card-content {
+  text-align: center;
 }
 
 /*Портфолио*/
@@ -267,11 +310,11 @@ body {
 }
 
 /*Подвал*/
-
+.footer {
+  padding: 60px 0;
+}
 .footer-logo {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .address .address-link {
@@ -280,4 +323,8 @@ body {
 
 .address .address-text {
   color: var(--text-white);
+}
+
+.mail {
+  margin: 9px 0;
 }

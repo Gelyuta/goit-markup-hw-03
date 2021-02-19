@@ -37,33 +37,35 @@
 
      <main>
          <!--Герой-->
-       <section class="hero">
-           <div class="container">
+        <section class="hero-bcg">
+        <div class="container hero ">
+       
             <h1 class="hero-title">Эффективные решения <br>для вашего бизнеса</h1>
             <button class="btn-hero">Заказать услугу</button>
-            </div>
-       </section>
+        </div>
+        </section>
+
+      
        <!--О нас-->
     <div class="container">
        <section class="section">
         
          <ul class="section-about" >
-             <li>
+             <li class="about">
                  <h3 class="section-subtitle">Внимание к деталям</h3>
                  <p class="section-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
              </li>
 
-             <li>
+             <li class="about">
                  <h3 class="section-subtitle">Пунктуальность</h3>
                  <p class="section-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
              </li>
 
-             <li>
+             <li class="about">
                  <h3 class="section-subtitle">Планирование</h3>
                  <p class="section-text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
              </li>
-             <li>
-
+             <li class="about">
                  <h3 class="section-subtitle">Современные технологии</h3>
                  <p class="section-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
              </li>
@@ -71,17 +73,22 @@
         
          <h2  class="section-title">Чем мы занимаемся</h2>
          <ul class="section-img">
-             <li>
+             <li class="section-card">
+                 
              <img src="./img/img-1.jpg" alt="image" width="370">
+           
             </li>
 
-            <li>
+            <li class="section-card">
+              
                 <img src="./img/img-2.jpg" alt="image" width="370">
+                
             </li>
             
-            <li>
-
+            <li class="section-card" >
+                
                 <img src="./img/img-3.jpg" alt="image" width="370">
+                
             </li>
          </ul>
         
@@ -94,28 +101,47 @@
          <h2 class="section-title" >Наша команда</h2>
          
          <ul class="section-team">
-             <li>
-                 <img src="./img/photo-1.jpg"  alt="photo" width="270"> 
+             <li class="section-cards">
+                 <div class="img-thumb">
+                 <img src="./img/photo-1.jpg"  alt="photo" width="270">
+                </div>
+
+                <div class="card-content">
                  <h3 class="team">Игорь Демьяненко</h3>
                  <p class="profession">Product Designer</p>
+                </div>
              </li>
-            <li>
-
+            <li class="section-cards">
+                <div class="img-thumb">
                 <img src="./img/photo-2.jpg" alt="photo" width="270">
+                </div>
+
+                <div class="card-content">
                 <h3 class="team">Ольга Репина</h3>
                 <p class="profession">Frontend Developer</p>
+                </div>
             </li>
 
-            <li>
+            <li class="section-cards">
+                <div class="img-thumb">
                 <img src="./img/photo-3.jpg" alt="photo" width="270">
+                </div>
+
+                <div class="card-content">
                 <h3 class="team">Николай Тарасов</h3>
                 <p class="profession">Marketing</p>
+                </div>
             </li>
 
-            <li>
+            <li class="section-cards">
+                <div class="img-thumb">
                 <img src="./img/photo-4.jpg" alt="photo" width="270">
+                </div>
+
+                <div class="card-content">
                 <h3 class="team">Михаил Ермаков</h3>
                 <p class="profession">UI Designer</p>
+                </div>
             </li>
             
          </ul>
@@ -133,8 +159,8 @@
         </div>
         <address class="address">
             <p class="address-text">г. Киев, пр-т Леси Украинки, 26</p>
-            <ul>
-                <li><a class="address-link" href="mailto:info@example.com">info@example.com</a></li>
+            <ul class="footer-address">
+                <li class="mail"><a class="address-link" href="mailto:info@example.com">info@example.com</a></li>
                 <li><a class="address-link" href="tel:+380991111111">+38 096 111 11 11</a></li>
             </ul>
         </address>
