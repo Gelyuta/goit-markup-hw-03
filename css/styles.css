@@ -273,6 +273,7 @@ body {
   background: none;
   padding: 0;
   outline: none;
+  padding: 6px 22px;
 }
 
 .buttons .item {
@@ -281,7 +282,7 @@ body {
   background-color: var(--border-card);
   border: none;
   display: inline-block;
-  padding: 6px 22px;
+
   border-radius: 4px;
 }
 
@@ -292,6 +293,7 @@ body {
 .btn-text:hover,
 .btn-text:focus {
   color: var(--text-white);
+  background-color: var(--btn-blue);
 }
 
 .item:hover,
