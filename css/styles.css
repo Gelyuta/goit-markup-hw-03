@@ -317,6 +317,7 @@ body {
   margin-left: var(--indent-card);
   margin-top: var(--indent-card);
   border: 1px solid var(--border-card);
+  background: var(--bcg-white);
 }
 
 .card-thumb {
